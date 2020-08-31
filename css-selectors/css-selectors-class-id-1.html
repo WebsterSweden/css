@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Class Id - 1</title>
+    <style>
+        .class-one {
+            background-color: lightpink;
+        }
+
+        .class-one.class-two {
+            background-color: lightsalmon;
+        }
+
+        .class-one .class-two {
+            background-color: lightskyblue;
+        }
+
+        .class-selector {
+            background-color: lightgray;
+        }
+
+        .class-two {
+            background-color: lightgreen;
+        }
+
+        /* .class-three {} */
+
+        p.class-three {
+            background-color: lightskyblue;
+        }
+
+        #id-selector {
+            background-color: lightgreen;
+        }
+
+        div {
+            background-color: white;
+            border: thin solid black;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="">One</div>
+    <div class="class-selector">Two</div>
+    <div class="">Thee</div>
+
+    <hr>
+
+    <div class="class-one class-three">One</div>
+    <div class="class-one class-two">Two</div>
+    <div class="class-one class-three">Thee</div>
+
+    <hr>
+
+    <div class="class-one">
+        <div class="class-three">
+            <div class="class-two">One</div>
+        </div>
+    </div>
+    <div class="class-one">
+        <div class="class-two">Two</div>
+    </div>
+    <div class="class-one">
+        <div class="class-three">
+            <div class="class-two">Three</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="id-selector"></div>
+
+    <hr>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni blanditiis dolorem doloribus. Similique ipsam
+            quis debitis, voluptates nesciunt, sunt, corrupti architecto accusamus quod optio unde doloremque? Sed
+            excepturi magnam ipsa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam repellat perferendis esse? Eius, omnis!
+            Ullam nostrum veritatis cumque vitae blanditiis nisi maiores ipsum, delectus, doloremque tempore error, illo
+            fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, qui! Autem amet officiis magnam iusto aliquam
+            doloremque corrupti fugiat maxime, maiores cupiditate a nam vitae ipsam voluptatem, est, tempora quas?</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic quo provident eos, quasi inventore
+            veritatis eaque magni tenetur perferendis numquam, eum necessitatibus similique quibusdam temporibus ullam
+            minima dolore distinctio.</p>
+        <p class="class-three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quos inventore, culpa
+            quia deserunt laborum
+            reprehenderit ipsam, eaque aspernatur eveniet sapiente eligendi totam modi reiciendis, repellendus ea
+            consectetur nesciunt non?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iusto aspernatur eum reiciendis libero ipsa
+            quam alias? Inventore ex dolores possimus maiores eveniet. Neque quos optio aspernatur aperiam laboriosam
+            ab.</p>
+    </div>
+
+</body>
+
+</html>
