@@ -9,12 +9,27 @@
         type="image/ico">
     <title>CSS before after - 1</title>
     <style>
+        div {
+            background-color: #555;
+            height: 400px;
+            position: relative;
+            width: 400px;
+        }
+
         p {
             color: red;
         }
 
         p::before {
-            content: "before";
+            background-image: url("../images/grid-black-3x3.png");
+            content: "";
+            height: 100%;
+            left: 0;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
         }
 
         p::after {
@@ -25,7 +40,9 @@
 </head>
 
 <body>
-    <p>This is a paragraph sentence.</p>
+    <div>
+        <p>This is a paragraph sentence.</p>
+    </div>
 
 </body>
 
