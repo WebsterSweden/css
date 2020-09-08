@@ -11,18 +11,19 @@
     <style>
         div {
             background-color: #555;
-            height: 400px;
+            height: 24rem;
             position: relative;
-            width: 400px;
+            width: 24rem;
         }
 
-        p {
-            color: red;
+        h1 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        p::before {
+        h1::before {
             background-image: url("../images/grid-black-3x3.png");
-            content: "";
+            content: "before";
             height: 100%;
             left: 0;
             opacity: 0.8;
@@ -32,7 +33,7 @@
             z-index: 1;
         }
 
-        p::after {
+        h1::after {
             content: "after";
         }
 
@@ -41,7 +42,7 @@
 
 <body>
     <div>
-        <p>This is a paragraph sentence.</p>
+        <h1>This is a paragraph sentence.</h1>
     </div>
 
 </body>
