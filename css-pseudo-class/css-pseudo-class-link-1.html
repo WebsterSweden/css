@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABxJREFUeNpi/P//PwMlgHHUgFEDRg0YLgYABBgA/Vov4R1OQM4AAAAASUVORK5CYII="
+        type="image/ico">
+    <title>CSS Pseudo-class link - 1</title>
+    <style>
+        .pseudoClassLink:link {
+            background-color: red;
+        }
+
+        .pseudoClassLink:visited {
+            background-color: green;
+        }
+
+        .pseudoClassLink:hover {
+            background-color: blue;
+        }
+
+        .pseudoClassLink:active {
+            background-color: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>LVHA-order</p>
+    <ul>
+        <li>link</li>
+        <li>visited</li>
+        <li>hover</li>
+        <li>active</li>
+    </ul>
+
+    <hr>
+
+    <a>anchor element no href</a>
+    <br>
+    <a class="pseudoClassLink">anchor element no href :link</a>
+    <br>
+    <a href="#">anchor element with href</a>
+    <br>
+    <a href="#" class="pseudoClassLink">anchor element with href :link</a>
+    <br>
+    <p>Paragraph no href</p>
+    <p class="pseudoClassLink">Paragraph no href :link</p>
+    <p href="#">Paragraph with href</p>
+    <p href="#" class="pseudoClassLink">Paragraph with href :link</p>
+
+</body>
+
+</html>
